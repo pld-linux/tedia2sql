@@ -31,8 +31,6 @@ SZDB SQL.
 %setup -q -n %{name}
 %patch0 -p1
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{_bindir}
@@ -45,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 echo
 echo "You can find sample configuration file here:"
 echo "/usr/share/doc/%{name}-%{version}/tedia2sqlrc.gz"
-echo "gunzip it to ~/.tediasqlrc and then edit, to cover your needs."
+echo "gunzip it to ~/.tedia2sqlrc and then edit, to cover your needs."
 echo
 
 %files
