@@ -1,5 +1,5 @@
 Summary:	Dia UML Diagram --> SQL Converter
-Summary(pl):	Konwerter diagramów UML z DIA do tabel SQLa
+Summary(pl):	Konwerter diagramów UML z DIA do tabel SQL-a
 Name:		tedia2sql
 Version:	1.2.9
 Release:	1
@@ -11,10 +11,10 @@ Patch0:		%{name}-%{name}rc-home.patch
 URL:		http://tedia2sql.tigris.org/
 Requires:	dia >= 0.90
 Requires:	expat >= 1.95.3
+Requires:	perl-Digest-MD5
+Requires:	perl-XML-DOM
 Requires:	perl-XML-Parser
 Requires:	perl-XML-RegExp
-Requires:	perl-XML-DOM
-Requires:	perl-Digest-MD5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,7 +25,7 @@ for multiple databases.
 
 %description -l pl
 Narzêdzie s³u¿±ce do konwersji diagramów UML w Dia do skryptów ró¿nych
-SZDB SQL.
+systemów zarz±dzania bazami danych SQL.
 
 %prep
 %setup -q -n %{name}
@@ -33,8 +33,9 @@ SZDB SQL.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_bindir}
-install tedia2sql $RPM_BUILD_ROOT/%{_bindir}
+install -d $RPM_BUILD_ROOT%{_bindir}
+
+install tedia2sql $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
