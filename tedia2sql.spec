@@ -9,7 +9,7 @@ Source0:	http://tedia2sql.tigris.org/files/documents/282/5625/%{name}-129.tar.gz
 # Source0-md5:	1396374395a9c876a5638ecd25139712
 Patch0:		%{name}-%{name}rc-home.patch
 URL:		http://tedia2sql.tigris.org/
-Requires:	dia >= 0.90
+Requires:	dia >= 1:0.90
 Requires:	expat >= 1.95.3
 Requires:	perl-Digest-MD5
 Requires:	perl-XML-DOM
