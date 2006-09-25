@@ -1,13 +1,12 @@
 Summary:	Dia UML Diagram --> SQL Converter
 Summary(pl):	Konwerter diagramów UML z DIA do tabel SQL-a
 Name:		tedia2sql
-Version:	1.2.9
+Version:	1.2.12
 Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://tedia2sql.tigris.org/files/documents/282/5625/%{name}-129.tar.gz
-# Source0-md5:	1396374395a9c876a5638ecd25139712
-Patch0:		%{name}-%{name}rc-home.patch
+Source0:	http://tedia2sql.tigris.org/files/documents/282/19423/tedia2sql-1.2.12.tar.gz
+# Source0-md5:	44ec0632a224c9238850acbc1468e585
 URL:		http://tedia2sql.tigris.org/
 Requires:	dia >= 1:0.90
 Requires:	expat >= 1.95.3
@@ -29,7 +28,6 @@ systemów zarz±dzania bazami danych SQL.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
