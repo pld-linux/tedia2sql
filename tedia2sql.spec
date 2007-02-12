@@ -1,5 +1,5 @@
 Summary:	Dia UML Diagram --> SQL Converter
-Summary(pl.UTF-8):   Konwerter diagramów UML z DIA do tabel SQL-a
+Summary(pl.UTF-8):	Konwerter diagramów UML z DIA do tabel SQL-a
 Name:		tedia2sql
 Version:	1.2.12
 Release:	1
