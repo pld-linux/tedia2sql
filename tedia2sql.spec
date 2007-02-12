@@ -1,5 +1,5 @@
 Summary:	Dia UML Diagram --> SQL Converter
-Summary(pl):	Konwerter diagram體 UML z DIA do tabel SQL-a
+Summary(pl.UTF-8):   Konwerter diagram贸w UML z DIA do tabel SQL-a
 Name:		tedia2sql
 Version:	1.2.12
 Release:	1
@@ -22,9 +22,9 @@ It is a tool that allows you to create a database ERD in Dia (using
 the UML shape toolset), then to convert that ERD into a SQL DDL script
 for multiple databases.
 
-%description -l pl
-Narz阣zie s硊勘ce do konwersji diagram體 UML w Dia do skrypt體 r罂nych
-system體 zarz眃zania bazami danych SQL.
+%description -l pl.UTF-8
+Narz臋dzie s艂u偶膮ce do konwersji diagram贸w UML w Dia do skrypt贸w r贸偶nych
+system贸w zarz膮dzania bazami danych SQL.
 
 %prep
 %setup -q -n %{name}
